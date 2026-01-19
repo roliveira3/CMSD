@@ -1,0 +1,41 @@
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pytorch=2.8
+  - torchvision=0.23
+  - pytorch-cuda=12.1
+  - pip
+  
+  # Core scientific libraries (install via conda for better compatibility)
+  - numpy>=2.2.6
+  - pandas>=2.3.3
+  - pillow>=10.2.0
+  - matplotlib
+  - seaborn>=0.13.1
+  
+  # Install remaining packages via pip
+  - pip:
+      - huggingface_hub>=0.20.0
+      - datasets>=2.16.0
+      - transformers>=4.39.0
+      - accelerate>=0.31.0
+      - sentencepiece>=0.1.99
+      - protobuf>=3.20.0
+      - validators
+      - portalocker
+      - openpyxl
+      - rich
+      - pyyaml
+      - timm
+      - einops
+      - torchmetrics
+      - scikit-learn
+
+      - vllm
+      # Flash attention (will be installed separately after environment creation) pip install --no-build-isolation flash-attn==2.8.3 
+      # flash-attn
