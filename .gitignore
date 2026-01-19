@@ -1,0 +1,6 @@
+.cache/
+.conda/
+env/
+tmp/
+__pycache__/
+VLMEvalKit/
