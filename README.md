@@ -35,7 +35,7 @@ pip install -e .
 cd ..
 ```
 
-All of our experiments were run on an NVIDIA RTX 4090 GPU with 24GB of VRAM.  
+All of our experiments were run on an NVIDIA RTX 4090 GPU with 24GB of VRAM. Similar NVIDIA GPUs should suffice for training. 
 Training requires <10min (as we only do 100 gradient steps resulting in approximately 1500 images seen).  
 Evaluation takes ~15min per checkpoint.
 
@@ -196,4 +196,5 @@ Checkpoints are saved to `training/model_checkpoints/<dataset>/`:
 Evaluation results are saved to `evaluation/results/`:
 - `<model_name>_<dataset>_results.jsonl`: Per-sample predictions
 - `<model_name>_<dataset>_metrics.json`: Accuracy metrics
+
 
