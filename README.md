@@ -103,10 +103,8 @@ DL-Reproducable/
 ├── environment.yml         # Conda environment
 ├── training/
 │   ├── train.py            # Clean training script
-│   └── train_kd.py         # Original (reference)
 ├── evaluation/
 │   ├── evaluate.py         # Clean evaluation script
-│   ├── eval_with_probing.py # Original (reference)
 │   └── loaders/            # Dataset loaders
 │       ├── __init__.py
 │       └── diagram_mcq.py  # MCQ dataset loader
