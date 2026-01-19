@@ -1,0 +1,17 @@
+{
+  "source_file": "collections/balanced/data/v4-10_undirected_planar_c112_image_only/data.jsonl",
+  "total_samples": 37137,
+  "train_samples": 30004,
+  "validation_samples": 2129,
+  "test_samples": 5004,
+  "train_target": 30000,
+  "test_target": 5000,
+  "seed": 42,
+  "use_translation_normalization": true,
+  "unique_canonical_ids": 14918,
+  "structure": {
+    "train": "train/data.jsonl + train/images/",
+    "validation": "validation/data.jsonl + validation/images/",
+    "test": "test/data.jsonl + test/images/"
+  }
+}
